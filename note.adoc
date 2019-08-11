@@ -1,4 +1,6 @@
 :toc:
+:toclevels: 5
+:toc-title: 目录
 :imagesdir: ./images
 
 == Linux
@@ -103,6 +105,9 @@ link:./example/file.js[文件上传与下载]
 link:./pages/communication-between-miniprogram-and-thinkjs.adoc[Thinkjs与小程序的通信]
 
 === 实例
+
+link:./pages/use-vant.adoc[使用Vant]
+
 
 https://juejin.im/entry/5af1b16d6fb9a07aca7a20d3[小程序商城Demo（Thinkjs + MySQL）]
 
@@ -223,7 +228,7 @@ nohttpinterface = true
 --auth 是否需要验证权限登录(用户名和密码)
 --syncdelay 数据写入硬盘的时间（秒），0是不等待，直接写入
 --notablescan 不允许表扫描
---maxConns 最大的并发连接数，默认2000  
+--maxConns 最大的并发连接数，默认2000
 --pidfilepath 指定进程文件，不指定则不产生进程文件
 --bind_ip 绑定IP，绑定后只能绑定的IP访问服务
 ----
@@ -289,71 +294,13 @@ let str2 = 'hello ' + `${str1}`    // result: 'hello world'
 
 == Python
 
-=== 语言类型
+*工欲善其事，必先利其器，* https://www.cnblogs.com/liangmingshen/p/9297381.html[PyCharm快捷键大全]
 
-编译型语言（如：C）执行步骤：
-翻译 => 全部翻译完毕 => 执行
+link:./pages/python-basic-knowledge.adoc[1.Python入门了解]
 
-解释型语言（如：Python）执行步骤：
-翻译 => 执行 => 翻译 => 执行
+link:./pages/list-and-tuple-Detailed-use-cases.adoc[2.Python基础]
 
-比较：
-
-速度：编译型语言比解释型语言执行速度快
-
-跨平台：解释型语言比编译型语言跨平台性好
-
-=== 常见错误
-
-====== 手误敲错单词或者定义的变量，仔细查看控制台输出！
-
-====== 多条语句写在同一行
-
-例如：`print("Hello")print("World")`
-
- `SyntaxError: invalid syntax`
-*语法错误：语法无效*
-
-每行代码负责完成一个动作
-
-==== 缩进错误
- `IndentationError: unexpected indent`
-*缩进错误*：不期望出现的缩进
-
-Python语言格式很严格，每行代码要对齐
-
-==== 关于中文
-
-Python2解释器编译中文会报错,
-但是Python3解释器可以编译中文
-
-用法  `Python3 文件名.py`
-
-==== 交互式运行Python程序
-
-*方法*：在终端中键入python或python3进入python解释器，输入exit()或使用快捷键ctrl+D退出官方解释器。
-
-*优点*：适用于学习/验证Python语法或局部代码。
-*缺点*：代码无法保存，不适合运行太大的程序。
-
-==== if判断语句
-
-----
-if 判断条件1:
-    执行语句1……
-elif 判断条件2:
-    执行语句2……
-elif 判断条件3:
-    执行语句3……
-else:
-    执行语句4……
-----
-
-这里需要注意的是，`else` 后面不能跟条件判断语句，不然会报错 `SyntaxError: invalid syntax`
-
-*语法错误：非法语法*
-
-link:./pages/list-and-tuple-Detailed-use-cases.adoc[1.list和tuple详细用例]
+link:./pages/python_object_oriented.adoc[3.Python面向对象]
 
 == Java
 
